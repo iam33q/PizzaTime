@@ -1,0 +1,231 @@
+#header {
+    background-image: url("../images/pizza-pizza-lovers.gif");
+    background-position: 0%;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0.5vw;
+    padding: 0.5vw;
+    border: 0.1vw;
+    border-radius: 10px;
+    border-color: springgreen;    
+    justify-content: start;
+}
+header h1 {
+    flex-grow: 1;
+    font-weight: 900;
+    width: auto;
+    min-width: 12vw;
+    margin: 10px;
+    font-family: 'Lucida Sans', 
+    'Lucida Sans Regular', 
+    'Lucida Grande', 
+    'Lucida Sans Unicode'
+    , Geneva, Verdana, sans-serif;
+    color: white;
+    float:left;    
+}
+header img {
+    border:5px;
+    margin: 5px;
+    border-color: black;
+    border-radius: 10px;
+    float: right;
+}
+#menu{
+    display: flex;
+    flex-grow: 1;
+    background-color: brown;
+    border-radius: 10px;
+    padding: 1px;
+    margin:5px;
+    justify-content: space-around;
+}
+.menubutton{
+    display: flex;
+    flex-grow: 1;
+    height:6vw;
+    max-height: 50px;
+    margin:5px;
+    border-radius: 10px;
+    background-color: moccasin !important;
+    justify-content: center !important;
+    align-content: center !important;
+}
+.menubutton h3{
+    justify-self: center;
+    align-self: center;
+    color:brown;
+    font-size: 2.25vw;
+    font-weight: 900;
+    margin:1px;
+}
+#foodsupercontainer {
+    display:flex;
+    align-self: center;
+    background-color: moccasin;
+    max-width: 1280px;
+    margin: 5px;
+    border-radius: 10px;
+    overflow:scroll;
+}
+.foodcontainer {
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0px;
+    padding: 0px !important;
+    justify-content: space-around;
+}
+.foodsubcontainer{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 5px;
+}
+#foodsupercontainer img {
+    display:flex;
+    flex-grow:1;
+    width: 100%;
+    border:0px;
+    object-fit: cover;
+    border-radius:10px;    
+    margin-bottom: 10px;
+}
+.pizza {
+    flex-direction: column;
+    border:1px;
+    margin:5px;
+    object-fit: fill;
+}
+.pizza h2{
+    font-size: 4vw;
+    line-height: 1.2;
+    align-self: center;
+    margin-left: 0;    
+    margin-bottom: 0.2vw;
+}
+.pizza button{
+    width: auto;    
+    height:auto;
+    max-height: 50px;
+    border-radius: 10px;
+    font-weight: 900;
+    background-color: white !important;
+    justify-content: center !important;
+    align-content: center !important;
+}
+#overlay {
+    position: sticky;
+    width: auto;
+    height: auto;
+    background-color: moccasin;
+}
+#aboutcontainer{
+    display:block;
+    justify-content: center;
+    align-content: center;
+    background-color: moccasin;
+    max-width: 1280px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 4vw;
+}
+#basket{
+    display:block;
+    justify-content: center;
+    align-content: center;
+    background-color: moccasin;
+    max-width: 1280px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 2vw;
+}
+#basket div{
+    display:flex;
+    flex-direction: column;
+}
+#checkoutpage{
+    display:block;
+    justify-content: center;
+    align-content: center;
+    background-color: moccasin;
+    max-width: 1280px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 4vw;
+}
+/*We have bootstrap at home! // Bootstrap at home:*/
+@media (min-width: 768px){ 
+    #foodsupercontainer{
+        overflow: scroll;
+    } 
+    .foodsubcontainer{
+        display: flex;
+        width: 25%;
+    }
+    .pizza h2{
+        font-size: 2.25vw;
+    }
+    #basket p,h4{
+        width:200px;
+        flex-direction:row;
+        flex-wrap: 1;
+        margin: 2vw;
+    }
+    #basket select{
+        width:80px; 
+        max-width: auto;
+        height:5vw;
+        margin: 1vw;
+    }
+    #basket button{
+        display: flex;
+        width:auto; 
+        max-width: 80px;
+        max-height:72px;
+    }
+    #basket div{
+        flex-direction: row;
+    }
+}
+@media(min-width:1280px){ 
+    #foodsupercontainer{
+        display:flex;
+        flex-shrink:1;
+        margin-left: calc(50% - 630px ) ; /*A wonderful solution to a horrible problem*/
+        margin-right: calc(50% - 630px ) ;
+    }
+    #aboutcontainer{
+        margin-left: calc(50% - 630px ) ; /*A wonderful solution to a horrible problem*/
+        margin-right: calc(50% - 630px ) ;
+    }
+    #basket{
+        margin-left: calc(50% - 630px ) ; /*A wonderful solution to a horrible problem*/
+        margin-right: calc(50% - 630px ) ;
+    }    
+    #checkoutpage{
+        margin-left: calc(50% - 630px ) ; /*A wonderful solution to a horrible problem*/
+        margin-right: calc(50% - 630px ) ;
+    }
+    .pizza h2{
+        font-size: 1.7rem !important;
+    }
+    .menubutton{
+        max-height: 64px;
+    }
+    .menubutton h3{
+        font-size: 32px !important;
+    }
+}
+@media(max-width:300px){ /*For those ancient || ridiculously narrow screens*/
+    .menubutton h3{
+        font-size:8px;
+        padding:0px;
+        margin:0px;
+        line-height: 0.8;
+    }
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- This is only here because Firefox suggested it. It doesn't seem to affect anything, -->
+<html> 
+    <head>
+        <title>PizzaTime!</title>
+        <link rel="stylesheet" href="styles/mainpage.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="javascript" href="functions.js">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="functions.js" type="text/javascript"></script>
+    </head>
+    <body onload="init()" style="background-color: orange !important">
+        <header>
+            <div id="header">
+                <h1>You know what time it is...</h1><br><br><br><br><br><h1 style="align-self: end; justify-self: end; ">...Pizza Time!</h1>
+            </div>
+        </header>
+        <main>
+            <div id="menu">
+                <button class="menubutton" onclick="showIngredients()"><h3>Show Ingredients</h3></button>
+                <button class="menubutton" onclick="document.location='basket.html'"><h3>Go To Basket</h3></button>
+                <button class="menubutton" onclick="document.location='checkout.html'"><h3>Go To Checkout</h3></button>
+                <button class="menubutton" onclick="document.location='about.html'"><h3>About</h3></button>
+            </div>
+            <div id="foodsupercontainer">
+                <div class="foodcontainer">
+                    <div class="foodsubcontainer"> 
+                        <div class="pizza" id="Margherita">   <img src="images/1907-PIZ-Cheese-and-Tomato.jpg" alt="Margherita"></div>
+                        <div class="pizza" id="Meateor">      <img src="images/1907-PIZ-Meateor.jpg" alt="Meateor"></div>
+                        <div class="pizza" id="Meatfielder">  <img src="images/1907-PIZ-Meatfielder.jpg" alt="Meatfielder"></div>
+                        <div class="pizza" id="SpicyAmerican"><img src="images/1907-PIZ-American-Hot.jpg" alt="American Hot"></div>
+                    </div>
+                    <div class="foodsubcontainer"> 
+                        <div class="pizza" id="Margherita(Vegan)"><img src="images/2008-PIZ-Dominos-Italian-Vegan-Margherita.jpg" alt="Vegan Margherita"></div>
+                        <div class="pizza" id="New-Yorker">       <img src="images/1907-PIZ-New-Yorker.jpg" alt="New Yorker"></div>
+                        <div class="pizza" id="Meatilicious">     <img src="images/1907-PIZ-Meatilicious.jpg" alt="Meatilicious"></div>
+                        <div class="pizza" id="MightyMeaty">      <img src="images/1907-PIZ-Mighty-Meaty.jpg" alt="Mighty Meaty"></div>
+                    </div>
+                </div>
+                <div class="foodcontainer">
+                    <div class="foodsubcontainer"> 
+                        <div class="pizza" id="Ham&Pineapple">  <img src="images/1907-PIZ-Ham-and-Pinapple.jpg" alt="Ham and Pineapple"></div>
+                        <div class="pizza" id="Chicken-Feast">  <img src="images/1907-PIZ-Chicken-Feast.jpg" alt="Chicken Feast"></div>
+                        <div class="pizza" id="Cheeseburger">   <img src="images/1907-PIZ-Cheeseburger-Pizza.jpg" alt="Cheeseburger"></div>
+                        <div class="pizza" id="VegiSupreme">    <img src="images/1907-PIZ-Vegi-Supreme.jpg" alt="Vegi Supreme"> </div>
+                    </div>
+                    <div class="foodsubcontainer"> 
+                        <div class="pizza" id="HotNSpicy">      <img src="images/1907-PIZ-Hot-and-Spicy.jpg" alt="Hot and Spicy"></div>
+                        <div class="pizza" id="Hawaiian">       <img src="images/1907-PIZ-Hawaiian.jpg" alt="Hawaiian Pizza"></div>
+                        <div class="pizza" id="Vegi-Volcano">   <img src="images/1907-PIZ-Vegi-Volcano.jpg" alt="Vegi Volcano"></div>
+                        <div class="pizza" id="Vegi-Pesto">     <img src="images/2202-PIZ-Grilled-Vegi-Pesto.jpg" alt="Grilled Vegi Pesto"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
