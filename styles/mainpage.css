@@ -73,7 +73,7 @@ header img {
 .foodcontainer {
     display: flex;
     width: 50%;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     margin: 0px;
     padding: 0px !important;
@@ -95,10 +95,10 @@ header img {
     margin-bottom: 10px;
 }
 .pizza {
+    display:flex;
     flex-direction: column;
     border:1px;
     margin:5px;
-    object-fit: fill;
 }
 .pizza h2{
     font-size: 4vw;
@@ -113,7 +113,7 @@ header img {
     max-height: 50px;
     border-radius: 10px;
     font-weight: 900;
-    background-color: white !important;
+    background-color: beige !important;
     justify-content: center !important;
     align-content: center !important;
 }
@@ -160,10 +160,12 @@ header img {
 /*We have bootstrap at home! // Bootstrap at home:*/
 @media (min-width: 768px){ 
     #foodsupercontainer{
-        overflow: scroll;
+        overflow: unset;
     } 
+    .foodcontainer{
+        flex-direction: row;
+    }
     .foodsubcontainer{
-        display: flex;
         width: 25%;
     }
     .pizza h2{

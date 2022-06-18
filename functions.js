@@ -312,7 +312,7 @@ function combinePizzas(){
     delete basket[opt2];
     localStorage.setItem("basket",JSON.stringify(basket));
     alert("Combination successful!");
-    goToBasket();
+    window.location.reload(true)
 }
 // Checkout functions
 function goToShipping(){ // Initialises checkout page information
