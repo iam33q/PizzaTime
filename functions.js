@@ -192,7 +192,7 @@ function goToBasket(){ // Initialises basket content from localStorage
         var side =basket[item][5].toString();
         var drink=basket[item][6].toString();
         var n = parseInt(id)+parseInt(1);
-        basketcontainer.innerHTML += ( //This looks amazing and beautiful and most importantly it works. Good luck following along though.
+        basketcontainer.innerHTML += ( //This only looks like this because JS requires strings for everything. So I put strings in my strings in my strings.
             "<div id='basketItem_"+id+"'>"+
                 "<div style='display:flex; flex-direction:column'><h4>"+n+") "+title+"</h4>"+
                 "<p>"+size+" - "+base+" - "+side+" - "+drink+" - &pound;"+price+"</p></div>"+
@@ -239,7 +239,7 @@ function goToBasket(){ // Initialises basket content from localStorage
         )         
     }
 }
-function checkBasketContent(){ //Might implement this later
+function checkBasketContent(){ //Might implement this later if needed
     var total = JSON.parse(localStorage.getItem("total"));
     var basket = JSON.parse(localStorage.getItem("basket"));
     var actualsum = 0;
@@ -291,7 +291,7 @@ function editBasketItem(id,title,size,price,base,side,drink){
     localStorage.setItem("basket",JSON.stringify(basket));
     alert(title+" changed size to "+size+"."); 
     document.getElementById("basket").innerHTML="";
-    goToBasket();
+    window.location.reload(true)
 }
 function removeFromBasket(id){ // This works in the console just fine. When I make a button run it, JS has a meltdown.
     var basket = JSON.parse(localStorage.getItem("basket"));
@@ -299,7 +299,7 @@ function removeFromBasket(id){ // This works in the console just fine. When I ma
     delete basket[id];
     localStorage.setItem("basket",JSON.stringify(basket));
     document.getElementById("basket").innerHTML="";
-    goToBasket();   
+    window.location.reload(true)
 }
 function combinePizzas(){ 
     var basket = JSON.parse(localStorage.getItem("basket"));

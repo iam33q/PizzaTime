@@ -107,7 +107,27 @@ header img {
     margin-left: 0;    
     margin-bottom: 0.2vw;
 }
-.pizza button{
+.pizza button, select{
+    width: auto;    
+    height:auto;
+    max-height: 50px;
+    border-radius: 10px;
+    font-weight: 900;
+    background-color: beige !important;
+    justify-content: center !important;
+    align-content: center !important;
+}
+#basket button, select{
+    width: auto;    
+    height:auto;
+    max-height: 50px;
+    border-radius: 10px;
+    font-weight: 900;
+    background-color: beige !important;
+    justify-content: center !important;
+    align-content: center !important;
+}
+#checkoutpage button, input{
     width: auto;    
     height:auto;
     max-height: 50px;
